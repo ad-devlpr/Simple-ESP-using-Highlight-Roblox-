@@ -4,6 +4,7 @@ _G.ESPColor = Color3.fromRGB(255, 255, 255)
 pcall(
     function()
         local highlight = Instance.new("Highlight")
+        highlight.Parent = gethui()
 
         game:GetService("RunService").RenderStepped:Connect(
             function()
